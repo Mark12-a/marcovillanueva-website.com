@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Municipalidad de Pacanguilla</title>
+    <link rel="icon" type="image/png" href="img/escudo.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <style>
+        :root {
+            --pacanguilla-yellow: #f4a100;
+        }
+    </style>
+</head>
+
+<body class="flex flex-col min-h-screen bg-gray-50 text-gray-800 font-sans">
+    <header>
+        <nav class="bg-white border-b border-gray-200 shadow-sm">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="index.html" class="flex items-center space-x-3">
+                    <img src="img/escudo.png" class="h-20 sm:h-24" alt="Logo Municipalidad" />
+                    <span class="self-center text-xl sm:text-2xl font-bold text-black">Municipalidad de
+                        Pacanguilla</span>
+                </a>
+
+                <div class="flex items-center ml-auto space-x-10">
+                    <div class="flex items-center space-x-4 lg:hidden">
+                        <button data-collapse-toggle="navbar-menu" type="button"
+                            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                            aria-controls="navbar-menu" aria-expanded="false">
+                            <span class="sr-only">Abrir menú</span>
+                            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="hidden w-full lg:block lg:w-auto">
+                        <ul
+                            class="font-medium flex flex-col lg:flex-row p-4 lg:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 lg:space-x-8 lg:space-x-6 rtl:space-x-reverse lg:mt-0 lg:border-0 lg:bg-white">
+                            <li>
+                                <a href="historia.html"
+                                    class="block py-2 px-3 rounded lg:p-0 text-gray-900 lg:hover:text-[var(--pacanguilla-yellow)]">
+                                    Nuestra historia
+                                </a>
+                            </li>
+                            <li>
+                                <a href="eventosfest.html"
+                                    class="block py-2 px-3 rounded lg:p-0 text-[var(--pacanguilla-yellow)] lg:hover:text-[var(--pacanguilla-yellow)]">
+                                    Eventos y festividades
+                                </a>
+                            </li>
+                            <li>
+                                <a href="vacantes.html"
+                                    class="block py-2 px-3 rounded lg:p-0 text-gray-900 lg:hover:text-[var(--pacanguilla-yellow)]">
+                                    Vacantes
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="hidden lg:hidden w-full lg:block lg:w-auto" id="navbar-menu">
+                    <ul
+                        class="font-medium flex flex-col lg:flex-row p-4 lg:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 lg:space-x-8 lg:space-x-6 rtl:space-x-reverse lg:mt-0 lg:border-0 lg:bg-white">
+                        <li>
+                            <a href="historia.html"
+                                class="block py-2 px-3 rounded lg:p-0 text-gray-900 hover:bg-[var(--pacanguilla-yellow)] hover:text-white">
+                                Nuestra historia
+                            </a>
+                        </li>
+                        <li>
+                            <a href="eventosfest.html"
+                                class="block py-2 px-3 rounded lg:p-0 lg:p-0 bg-[var(--pacanguilla-yellow)] text-white">
+                                Eventos y festividades
+                            </a>
+                        </li>
+                        <li>
+                            <a href="vacantes.html"
+                                class="block py-2 px-3 rounded lg:p-0 text-gray-900 hover:bg-[var(--pacanguilla-yellow)] hover:text-white">
+                                Vacantes
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="relative flex-grow bg-gray-100 px-6 py-12">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-[var(--pacanguilla-yellow)]">
+                Eventos y Festividades</h2>
+
+            <article class="bg-white p-8 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold mb-4 text-gray-800">Celebración por el Día de la Madre</h3>
+                <p class="text-lg mb-6 text-gray-700 text-justify">
+                    El pasado 12 de mayo, la Municipalidad de Pacanguilla organizó una emotiva ceremonia en
+                    honor al Día de la Madre, con presentaciones artísticas, sorteos y reconocimientos especiales a las
+                    madres destacadas de la comunidad. Fue una jornada llena de alegría, unión y homenaje.
+                </p>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <div class=" overflow-hidden rounded-lg shadow-md">
+                        <img src="./img/diamadre.png" alt="Evento Día de la Madre"
+                            class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-md">
+                        <img src="./img/foto1.png" alt="Madres celebrando"
+                            class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-md">
+                        <img src="./img/foto2.png" alt="Evento Día de la Madre"
+                            class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-md">
+                        <img src="./img/foto3.png" alt="Premiación madres"
+                            class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <footer class="bg-[var(--pacanguilla-yellow)] text-white py-6 mt-auto">
+        <div class="max-w-screen-xl mx-auto px-4 text-center text-sm">
+            Municipalidad de Pacanguilla © 2025 — Página web desarrollada por
+            <span class="font-semibold">Marco</span>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Municipalidad de Pacanguilla</title>
+    <link rel="icon" type="image/png" href="img/escudo.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <style>
+        :root {
+            --pacanguilla-yellow: #f4a100;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen bg-gray-50 text-gray-800 font-sans">
+    <header>
+        <nav class="bg-white border-b border-gray-200 shadow-sm">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="index.html" class="flex items-center space-x-3">
+                    <img src="img/escudo.png" class="h-20 sm:h-24" alt="Logo Municipalidad" />
+                    <span class="self-center text-xl sm:text-2xl font-bold text-black">Municipalidad de
+                        Pacanguilla</span>
+                </a>
+
+                <div class="flex items-center ml-auto space-x-10">
+                    <div class="flex items-center space-x-4 lg:hidden">
+                        <button data-collapse-toggle="navbar-menu" type="button"
+                            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                            aria-controls="navbar-menu" aria-expanded="false">
+                            <span class="sr-only">Abrir menú</span>
+                            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="hidden w-full lg:block lg:w-auto">
+                        <ul
+                            class="font-medium flex flex-col lg:flex-row p-4 lg:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 lg:space-x-8 lg:space-x-6 rtl:space-x-reverse lg:mt-0 lg:border-0 lg:bg-white">
+                            <li>
+                                <a href="historia.html"
+                                    class="block py-2 px-3 rounded lg:p-0 text-[var(--pacanguilla-yellow)] lg:hover:text-[var(--pacanguilla-yellow)]">
+                                    Nuestra historia
+                                </a>
+                            </li>
+                            <li>
+                                <a href="eventosfest.html"
+                                    class="block py-2 px-3 rounded lg:p-0 text-gray-900 lg:hover:text-[var(--pacanguilla-yellow)]">
+                                    Eventos y festividades
+                                </a>
+                            </li>
+                            <li>
+                                <a href="vacantes.html"
+                                    class="block py-2 px-3 rounded lg:p-0 text-gray-900 lg:hover:text-[var(--pacanguilla-yellow)]">
+                                    Vacantes
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="hidden lg:hidden w-full lg:block lg:w-auto" id="navbar-menu">
+                    <ul
+                        class="font-medium flex flex-col lg:flex-row p-4 lg:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 lg:space-x-8 lg:space-x-6 rtl:space-x-reverse lg:mt-0 lg:border-0 lg:bg-white">
+                        <li>
+                            <a href="historia.html"
+                                class="block py-2 px-3 rounded lg:p-0 bg-[var(--pacanguilla-yellow)] text-white">
+                                Nuestra historia
+                            </a>
+                        </li>
+                        <li>
+                            <a href="eventosfest.html"
+                                class="block py-2 px-3 rounded lg:p-0 text-gray-900 hover:bg-[var(--pacanguilla-yellow)] hover:text-white">
+                                Eventos y festividades
+                            </a>
+                        </li>
+                        <li>
+                            <a href="vacantes.html"
+                                class="block py-2 px-3 rounded lg:p-0 text-gray-900 hover:bg-[var(--pacanguilla-yellow)] hover:text-white">
+                                Vacantes
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <section class="relative flex-grow">
+        <img src="img/imagen2.png" alt="Imagen Municipalidad"
+            class="absolute inset-0 w-full h-full object-cover opacity-70" />
+        <div class="relative z-10 max-w-6xl mx-auto px-6 py-12">
+            <h2 class="text-3xl sm:text-4xl font-bold text-white text-center mb-8 drop-shadow-lg">
+                Historia de la Municipalidad
+            </h2>
+            <div
+                class="grid grid-cols-1 lg:grid-cols-2 gap-6 bg-black/40 p-6 rounded text-white drop-shadow-lg text-justify text-lg leading-relaxed">
+                <p>
+                    La Municipalidad del Centro Poblado de Pacanguilla, ubicada en el distrito de Pacanga, provincia de
+                    Chepén, en la región de La Libertad, se fundó el 5 de diciembre de 1940. A lo largo de su historia,
+                    esta entidad se ha dedicado a promover el desarrollo económico y social de la comunidad, gestionando
+                    los recursos locales para implementar proyectos que contribuyan al bienestar de la población.
+                </p>
+                <p>
+                    La municipalidad está registrada bajo el RUC 20178862155 y se encuentra activa, con su sede
+                    administrativa en la Calle Mariano Melgar Nro. 685, frente a la Plaza de Armas de Pacanguilla. Desde
+                    su fundación, la institución ha tenido como misión principal administrar los ingresos locales y
+                    desarrollar labores en beneficio de la comunidad.
+                </p>
+                <p>
+                    Con el tiempo, ha ampliado sus actividades para abarcar áreas de gestión urbana, servicios públicos,
+                    y apoyo social, adaptándose a las necesidades de crecimiento de la población. La Municipalidad del
+                    Centro Poblado de Pacanguilla ha experimentado un crecimiento sostenido, particularmente en la
+                    última década, gracias a la modernización de sus servicios y la implementación de proyectos de
+                    infraestructura que han mejorado la calidad de vida de los habitantes.
+                </p>
+                <p>
+                    A futuro, la municipalidad tiene como visión convertirse en un referente de gestión local eficiente,
+                    promoviendo la transparencia y la participación ciudadana. Para lograrlo, se enfocan en mejorar la
+                    infraestructura vial, expandir los servicios educativos y de salud, así como promover el desarrollo
+                    económico mediante la creación de nuevas oportunidades de empleo y el apoyo a las actividades
+                    comerciales y agropecuarias locales.
+                </p>
+                <p>
+                    La visión de la municipalidad es ser una entidad municipal modelo en la región, reconocida por su
+                    gestión eficiente y por el desarrollo sostenible de la comunidad. Así mismo, su misión es
+                    administrar los recursos de manera transparente y eficiente para promover el bienestar social,
+                    económico y cultural de la comunidad.
+                </p>
+                <p>
+                    Aunque la municipalidad no cuenta con "clientes" en el sentido comercial, sus principales
+                    beneficiarios son los habitantes del Centro Poblado de Pacanguilla y las comunidades aledañas. A
+                    través de sus actividades, la municipalidad atiende las necesidades de la población local y trabaja
+                    en conjunto con otros actores locales y regionales para promover el desarrollo integral del distrito
+                    de Pacanga.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[var(--pacanguilla-yellow)] text-white py-6 mt-auto">
+        <div class="max-w-screen-xl mx-auto px-4 text-center text-sm">
+            Municipalidad de Pacanguilla © 2025 — Página web desarrollada por
+            <span class="font-semibold">Marco</span>
+        </div>
+    </footer>
+</body>
+</html>
